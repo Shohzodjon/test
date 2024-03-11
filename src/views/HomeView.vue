@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import ChartCart from '@/components/chart-card/ChartCart.vue';
-import CardComp from '@/components/CardComp.vue';
-import UpIcon from '@/assets/icons/UpIcon.vue';
-import BitCoin from '@/assets/icons/BitCoin.vue';
-import DollarSign from '@/assets/icons/DollarSign.vue';
-import DoubleArrow from '@/assets/icons/DoubleArrow.vue';
-import CalendarIcon from '@/assets/icons/CalendarIcon.vue';
-import Machine from '@/assets/icons/Machine.vue';
-import Cloud from '@/assets/icons/Cloud.vue';
-import Store from '@/assets/icons/Store.vue';
-import Settings from '@/assets/icons/Settings.vue';
-import Login from '@/assets/icons/Login.vue';
-import PayIcon from '@/assets/icons/PayIcon.vue';
-import Logo from '@/assets/icons/Logo.vue';
-import GlobulCard from '@/components/globus/GlobulCard.vue';
-import { RouterLink } from 'vue-router';
+import ChartCart from "@/components/chart-card/ChartCart.vue";
+import CardComp from "@/components/CardComp.vue";
+import UpIcon from "@/assets/icons/UpIcon.vue";
+import BitCoin from "@/assets/icons/BitCoin.vue";
+import DollarSign from "@/assets/icons/DollarSign.vue";
+import DoubleArrow from "@/assets/icons/DoubleArrow.vue";
+import CalendarIcon from "@/assets/icons/CalendarIcon.vue";
+import Machine from "@/assets/icons/Machine.vue";
+import Cloud from "@/assets/icons/Cloud.vue";
+import Store from "@/assets/icons/Store.vue";
+import Settings from "@/assets/icons/Settings.vue";
+import Login from "@/assets/icons/Login.vue";
+import PayIcon from "@/assets/icons/PayIcon.vue";
+import Logo from "@/assets/icons/Logo.vue";
+import GlobulCard from "@/components/globus/GlobulCard.vue";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -32,7 +32,11 @@ import { RouterLink } from 'vue-router';
             <GlobulCard />
           </div>
           <div class="grid-item">
-            <CardComp sub-title="Current date" desc-par="Current date and time" btn-class="main-class">
+            <CardComp
+              sub-title="Current date"
+              desc-par="Current date and time"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <UpIcon />
               </template>
@@ -48,8 +52,11 @@ import { RouterLink } from 'vue-router';
           <!--  -->
 
           <div class="grid-item">
-            <CardComp sub-title="Withdrawal status" desc-par="Connected cryptocurrencies" btn-class="main-class">
-
+            <CardComp
+              sub-title="Withdrawal status"
+              desc-par="Connected cryptocurrencies"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <BitCoin />
               </template>
@@ -57,21 +64,24 @@ import { RouterLink } from 'vue-router';
               <template #card-bottom>
                 <ul class="kripto-list">
                   <li>
-                    <img src="@/assets/images/ton.png" alt="tether">
+                    <img src="@/assets/images/ton.png" alt="tether" />
                   </li>
                   <li>
-                    <img src="@/assets/images/ton2.png" alt="ton2">
+                    <img src="@/assets/images/ton2.png" alt="ton2" />
                   </li>
                   <li>
-                    <img src="@/assets/images/ton3.png" alt="ton3">
+                    <img src="@/assets/images/ton3.png" alt="ton3" />
                   </li>
                 </ul>
               </template>
             </CardComp>
           </div>
           <div class="grid-item">
-            <CardComp sub-title="Buy items" desc-par="Time from the last purchase" btn-class="main-class">
-
+            <CardComp
+              sub-title="Buy items"
+              desc-par="Time from the last purchase"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <DollarSign />
               </template>
@@ -85,9 +95,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Waxpeer pay bots" desc-par="The number of avaliable bots on Wxpeer pay"
-              btn-class="main-class">
-
+            <CardComp
+              sub-title="Waxpeer pay bots"
+              desc-par="The number of avaliable bots on Wxpeer pay"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <DoubleArrow />
               </template>
@@ -101,9 +113,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-
-            <CardComp sub-title="Waxpeer pay" desc-par="The last successful trade" btn-class="main-class">
-
+            <CardComp
+              sub-title="Waxpeer pay"
+              desc-par="The last successful trade"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <PayIcon />
               </template>
@@ -117,9 +131,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Availability of a site" desc-par="The availability of the home page of the site"
-              btn-class="aviable-btn">
-
+            <CardComp
+              sub-title="Availability of a site"
+              desc-par="The availability of the home page of the site"
+              btn-class="aviable-btn"
+            >
               <template #button-slot>
                 <CalendarIcon />
               </template>
@@ -133,8 +149,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Server status" desc-par="The status of the website servers" btn-class="server-btn">
-
+            <CardComp
+              sub-title="Server status"
+              desc-par="The status of the website servers"
+              btn-class="server-btn"
+            >
               <template #button-slot>
                 <Cloud />
               </template>
@@ -148,8 +167,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Steam Web API" desc-par="Last check June 3, 2022 02:50:16" btn-class="stream-btn">
-
+            <CardComp
+              sub-title="Steam Web API"
+              desc-par="Last check June 3, 2022 02:50:16"
+              btn-class="stream-btn"
+            >
               <template #button-slot>
                 <Machine />
               </template>
@@ -163,8 +185,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="API response" desc-par="Last request 10 seconds ago" btn-class="main-class">
-
+            <CardComp
+              sub-title="API response"
+              desc-par="Last request 10 seconds ago"
+              btn-class="main-class"
+            >
               <template #button-slot>
                 <Settings />
               </template>
@@ -178,8 +203,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Last trade" desc-par="The last trade was created 5s ago" btn-class="store-btn">
-
+            <CardComp
+              sub-title="Last trade"
+              desc-par="The last trade was created 5s ago"
+              btn-class="store-btn"
+            >
               <template #button-slot>
                 <Store />
               </template>
@@ -193,8 +221,11 @@ import { RouterLink } from 'vue-router';
           </div>
 
           <div class="grid-item">
-            <CardComp sub-title="Login" desc-par="Shows either your login is working or not" btn-class="login-btn">
-
+            <CardComp
+              sub-title="Login"
+              desc-par="Shows either your login is working or not"
+              btn-class="login-btn"
+            >
               <template #button-slot>
                 <Login />
               </template>
@@ -206,17 +237,14 @@ import { RouterLink } from 'vue-router';
               </template>
             </CardComp>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 </template>
 
 <style scoped>
 section {
-  
   height: 100%;
 }
 
@@ -234,10 +262,10 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
-.grid-item{
+.grid-item {
   height: 190px;
 }
-.grid-item:nth-child(2){
+.grid-item:nth-child(2) {
   grid-column: span 2;
 }
 .date-bottom {
@@ -246,16 +274,13 @@ section {
   justify-content: space-between;
 }
 
-
-
-
 /* extra style */
 .date-bottom span {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
-  color: #BABAC280;
+  color: #babac280;
 }
 
 .kripto-list {
@@ -301,11 +326,123 @@ section {
 }
 
 .server-title {
-  color: #EC7A2A !important;
+  color: #ec7a2a !important;
 }
 
 .trade-title {
-  color: #EF5858;
+  color: #ef5858;
+}
+
+/*   responsive */
+@media (max-width: 1400px) {
+  .card-grid {
+    gap: 10px;
+  }
+  .aviable-title,
+  .server-title,
+  .stream-title,
+  .trade-title,
+  .login-title {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .kripto-list li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-item {
+    height: 180px;
+  }
+  .aviable-title,
+  .server-title,
+  .stream-title,
+  .trade-title,
+  .login-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .kripto-list li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .grid-item {
+    height: 170px;
+  }
+  .aviable-title,
+  .server-title,
+  .stream-title,
+  .trade-title,
+  .login-title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .kripto-list li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10px;
+  }
+  .grid-item:nth-child(2) {
+    grid-column: span 1;
+  }
+  .aviable-title,
+  .server-title,
+  .stream-title,
+  .trade-title,
+  .login-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .kripto-list li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 10px;
+  }
+  .grid-item:nth-child(2) {
+    grid-column: span 1;
+  }
+  .grid-item {
+    height: 150px;
+  }
+  .kripto-list li {
+    width: 35px;
+    height: 35px;
+  }
+  .aviable-title,
+  .server-title,
+  .stream-title,
+  .trade-title,
+  .login-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 </style>
 
@@ -313,14 +450,14 @@ section {
 .aviable-btn,
 .stream-btn,
 .login-btn {
-  background: #20CE7012 !important;
+  background: #20ce7012 !important;
 }
 
 .server-btn {
-  background: #EC7A2A12 !important;
+  background: #ec7a2a12 !important;
 }
 
 .store-btn {
-  background: #EF585812 !important;
+  background: #ef585812 !important;
 }
 </style>

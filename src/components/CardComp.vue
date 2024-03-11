@@ -1,65 +1,87 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 defineProps<{
-    subTitle?: string,
-    descPar?: string,
-    btnClass: string
-}>()
+  subTitle?: string;
+  descPar?: string;
+  btnClass: string;
+}>();
 </script>
 
 <template>
-    <div class="card-component">
-        <div class="card-header">
-            <button :class="btnClass">
-                <slot name="button-slot"></slot>
-            </button>
-            <div class="card-header-right">
-                <h4 class="sub-title">{{ subTitle }}</h4>
-                <p class="desc-par">{{ descPar }}</p>
-            </div>
-        </div>
-        <div class="card-bottom">
-            <slot name="card-bottom"></slot>
-        </div>
+  <div class="card-component">
+    <div class="card-header">
+      <button :class="btnClass">
+        <slot name="button-slot"></slot>
+      </button>
+      <div class="card-header-right">
+        <h4 class="sub-title">{{ subTitle }}</h4>
+        <p class="desc-par">{{ descPar }}</p>
+      </div>
     </div>
+    <div class="card-bottom">
+      <slot name="card-bottom"></slot>
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .card-component {
-    background: var(--black-700);
-    border-radius: 8px;
-    padding: 12px;
-    height: 100%;
+  background: var(--black-700);
+  border-radius: 8px;
+  padding: 12px 16px 12px 12px;
+  height: 100%;
 }
 
 .card-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .card-header button {
-    width: 32px;
-    height: 32px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    cursor: pointer;
-    background: #262626;
-    border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+  background: #262626;
+  border: none;
 }
 
 .card-header-right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
 }
 
 .card-bottom {
-    margin-left: 42px;
+  margin-left: 42px;
+}
+
+@media (max-width: 991px) {
+  .card-header button {
+    width: 30px;
+    height: 30px;
+  }
+  .card-bottom {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .card-component {
+    padding: 10px;
+  }
+  .card-header {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .card-bottom {
+    margin-left: 40px;
+  }
 }
 </style>
