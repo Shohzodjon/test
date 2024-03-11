@@ -9,4 +9,8 @@ import HomeViewVue from "./views/HomeView.vue";
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section{
+  height: 100%;
+}
+</style>
