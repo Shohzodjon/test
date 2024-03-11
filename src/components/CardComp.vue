@@ -36,7 +36,7 @@ defineProps<{
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .card-header button {

@@ -216,7 +216,7 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 section {
-  background: var(--black-900);
+  
   height: 100%;
 }
 
@@ -234,7 +234,9 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
-
+.grid-item{
+  height: 190px;
+}
 .grid-item:nth-child(2){
   grid-column: span 2;
 }

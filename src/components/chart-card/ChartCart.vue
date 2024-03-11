@@ -28,13 +28,14 @@ import UpIcon from '@/assets/icons/UpIcon.vue';
     border-radius: 8px;
     padding: 12px;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .card-header {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .card-header button {
