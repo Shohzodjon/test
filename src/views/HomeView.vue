@@ -13,6 +13,7 @@ import Settings from '@/assets/icons/Settings.vue';
 import Login from '@/assets/icons/Login.vue';
 import PayIcon from '@/assets/icons/PayIcon.vue';
 import Logo from '@/assets/icons/Logo.vue';
+import GlobulCard from '@/components/globus/GlobulCard.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
@@ -26,6 +27,9 @@ import { RouterLink } from 'vue-router';
         <div class="card-grid">
           <div class="grid-item">
             <ChartCart />
+          </div>
+          <div class="grid-item">
+            <GlobulCard />
           </div>
           <div class="grid-item">
             <CardComp sub-title="Current date" desc-par="Current date and time" btn-class="main-class">
@@ -42,6 +46,7 @@ import { RouterLink } from 'vue-router';
             </CardComp>
           </div>
           <!--  -->
+
           <div class="grid-item">
             <CardComp sub-title="Withdrawal status" desc-par="Connected cryptocurrencies" btn-class="main-class">
 
@@ -230,6 +235,9 @@ section {
   gap: 15px;
 }
 
+.grid-item:nth-child(2){
+  grid-column: span 2;
+}
 .date-bottom {
   display: flex;
   align-items: center;
